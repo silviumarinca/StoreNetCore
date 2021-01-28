@@ -1,0 +1,17 @@
+@page "/admin"
+@{Layout = null;}
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize]
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SportStore admin</title>
+        <link rel="stylesheet" href="/lib/twitter-bootstrap/css/bootstrap.min.css"
+        >
+        <base href="/">
+    </head>
+    <body>
+        <component type="typeof(Routed)" render-mode="Server" />
+        <script src ="/_framework/blazor.server.js"></script>
+    </body>
+</html>
